@@ -9,4 +9,14 @@ export class HomeComponent {
   placeholder: string = "email"
   placepass= "senha"
   color:string= "red"
+
+  quantidade = 0
+
+  adicionar(){
+    this.quantidade ++;
+  }
+
+  diminuir(){
+    this.quantidade --;
+  }
 }
