@@ -10,7 +10,17 @@ export class HomeComponent {
   placepass= "senha"
   color:string= "red"
 
+  ativo: boolean = true;
+
   quantidade = 0
+
+  produtos : string[] = []
+
+  estilo: string = "disable"
+
+  constructor(){
+    this.produtos = ["carro", "moto", "avião"]
+  }
 
   adicionar(){
     this.quantidade ++;
@@ -18,5 +28,21 @@ export class HomeComponent {
 
   diminuir(){
     this.quantidade --;
+  }
+
+  mostrar(){
+    this.ativo = true
+  }
+
+  esconder(){
+    this.ativo = false
+  }
+
+  trocar(){
+    if(this.estilo === "disable"){
+      this.estilo = "enable"
+    }else{
+      this.estilo = "disable"
+    }
   }
 }

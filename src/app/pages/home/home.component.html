@@ -6,7 +6,25 @@
 
 <p [style.color]="color" >{{ placepass }}</p>
 
-
+<div>
 <button (click)="adicionar()"> + </button>
 {{ quantidade }}
 <button (click)="diminuir()"> - </button>
+</div>
+
+<div>
+  <button (click)="mostrar()"> click para mostrar </button>
+  <button (click)="esconder()"> click para esconder </button>
+  <h1 *ngIf="ativo">Achou!!</h1>
+</div>
+
+<div>
+  <ul>
+    <li *ngFor="let p of produtos">  {{ p }} </li>
+  </ul>
+</div>
+
+<div>
+  <p [ngClass]="estilo">aaaaaaaaaaaaaaaa</p>
+  <button (click)="trocar()">Noite / dia</button>
+</div>
