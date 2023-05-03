@@ -8,8 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
-import { SocialButtonComponent } from './pages/login/components/social-button/social-button.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { SocialComponent } from './shared/components/social/social.component';
+import { InputLabelComponent } from './pages/login/components/input-label/input-label.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     LoginComponent,
     HomeComponent,
-    SocialButtonComponent
+    FooterComponent,
+    SocialComponent,
+    InputLabelComponent
   ],
   imports: [
     BrowserModule,
